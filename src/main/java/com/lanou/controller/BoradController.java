@@ -62,4 +62,11 @@ public class BoradController {
     public String gitTest(){
         return "aaa";
     }
+
+    // 编辑代码
+    @RequestMapping("/branch")
+    @ResponseBody
+    public String branchTest(){
+        return "branch";
+    }
 }

@@ -62,4 +62,8 @@ public class BoradController {
     public String gitTest(){
         return "aaa";
     }
+
+    public void test(){
+        System.out.println(1111);
+    }
 }

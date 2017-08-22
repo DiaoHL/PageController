@@ -56,4 +56,10 @@ public class BoradController {
         PageInfo<Borad> pageInfo = boradService.queryPage(pageNum, pageSize);
         return pageInfo;
     }
+
+    @RequestMapping("/test")
+    @ResponseBody
+    public String gitTest(){
+        return "aaa";
+    }
 }

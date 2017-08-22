@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MessageBorad练习:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="MessageBorad-练习.war">
+      <element id="artifact" artifact-name="MessageBorad练习:war exploded" />
+    </root>
+  </artifact>
+</component>

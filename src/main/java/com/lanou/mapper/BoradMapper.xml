@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lanou.mapper.BoradMapper">
+    <resultMap id="baseMap" type="Borad">
+        <id column="b_id" property="boradId"/>
+        <result column="b_content" property="boradContent"/>
+        <result column="b_time" property="boradTime"/>
+        <result column="top_count" property="topCount"/>
+        <result column="tread_count" property="treadCount"/>
+    </resultMap>
+
+    <select id="findAllBorad" resultMap="baseMap">
+        SELECT * from t_borad
+    </select>
+
+    <insert id="insertBorad" parameterType="Borad" useGeneratedKeys="true" keyProperty="boradId">
+        INSERT INTO t_borad VALUES (NULL ,#{boradContent} ,#{boradTime} ,#{topCount} ,#{treadCount} ,null)
+    </insert>
+</mapper>

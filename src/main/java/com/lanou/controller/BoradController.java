@@ -62,4 +62,24 @@ public class BoradController {
     public String gitTest(){
         return "aaa";
     }
+
+    // 编辑代码
+    @RequestMapping("/branch")
+    @ResponseBody
+    public String branchTest(){
+        return "branch";
+    }
+
+    public void test(){
+        System.out.println(1111);
+    }
+    public void test2(){
+        System.out.println(333333);
+    }
+    public void test1(){
+        System.out.println(222222);
+        //嘿嘿
+        // 哈哈
+        System.out.println("测试冲突");
+    }
 }

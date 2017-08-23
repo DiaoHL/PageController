@@ -63,6 +63,13 @@ public class BoradController {
         return "aaa";
     }
 
+    // 编辑代码
+    @RequestMapping("/branch")
+    @ResponseBody
+    public String branchTest(){
+        return "branch";
+    }
+
     public void test(){
         System.out.println(1111);
     }

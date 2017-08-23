@@ -78,5 +78,6 @@ public class BoradController {
     }
     public void test1(){
         System.out.println(222222);
+        //嘿嘿
     }
 }
